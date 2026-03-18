@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # step1 작업 결과 이어받기 가정
-image_path = 'C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2/apple_side_A.png'
+image_path = 'C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2/apple_top_A.png'
 img_array = np.fromfile(image_path, np.uint8)
 img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
 original_display = img.copy()
