@@ -11,6 +11,11 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+if __name__ == "__main__":
+    base_dir = "C:/Users/PC1/OneDrive/바탕 화면/biomaterial-handling/week4"
+    os.chdir(base_dir)
 from itertools import product, combinations
 
 # 한글 폰트 설정 (Windows 환경)
@@ -163,4 +168,5 @@ ax3.set_title(f'Step 4-c: 점유율 및 공극률 ({avocado_count}개 적재 시
 
 # 레이아웃 간섭 방지 처리 및 화면 표시
 plt.tight_layout()
+plt.savefig('week4_step1_result.png', dpi=300)
 plt.show()

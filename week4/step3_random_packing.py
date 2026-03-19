@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
 
 print("-" * 50)
-print("🥑 Step 3: 가상 패킹 시뮬레이션 비교 (배열 적재 vs 무작위 적재)")
+print("Step 3: 가상 패킹 시뮬레이션 비교 (배열 적재 vs 무작위 적재)")
 print("-" * 50)
 
 # 1. 시뮬레이션 환경 및 농산물 규격 설정 
@@ -110,4 +110,5 @@ ax2 = fig.add_subplot(1, 2, 2, projection='3d')
 plot_packing(ax2, random_pos, f"Random Packing (Fitted: {len(random_pos)} units)")
 
 plt.tight_layout()
+plt.savefig('week4_step3_result.png', dpi=300)
 plt.show()

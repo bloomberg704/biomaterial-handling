@@ -10,7 +10,7 @@
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 from itertools import product, combinations
 
 # 한글 폰트 설정 (Windows 환경)
