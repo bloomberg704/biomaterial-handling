@@ -112,7 +112,7 @@ if data['from_image'] and data['image'] is not None:
     plt.suptitle('Step 3: 이미지 → 프로파일 → 3D 회전체 재구성',
                  fontsize=14, fontweight='bold')
     plt.tight_layout()
-    plt.savefig('C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week3/step3_result.png', dpi=300)
+    plt.savefig('step3_result.png', dpi=300)
     plt.show()
 
 else:
