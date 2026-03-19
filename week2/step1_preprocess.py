@@ -1,8 +1,13 @@
 import cv2
 import numpy as np
+import os
+
+if __name__ == "__main__":
+    base_dir = "C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2"
+    os.chdir(base_dir)
 
 # 1. 영상 로드 (한글 경로 지원을 위해 imdecode 사용 권장)
-image_path = 'C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2/apple_side_A.png'
+image_path = 'apple_side_A.png'
 
 img_array = np.fromfile(image_path, np.uint8)
 img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)

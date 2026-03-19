@@ -1,12 +1,17 @@
 import cv2
 import numpy as np
+import os 
+
+if __name__ == "__main__":
+    base_dir = "C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2"
+    os.chdir(base_dir)
 
 # step1 작업 결과 이어받기 가정
-image_path = 'C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2/apple_top_A.png'
+image_path = 'apple_side_A.png'
 img_array = np.fromfile(image_path, np.uint8)
 img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
 original_display = img.copy()
-
+ 
 # 사과는 붉거나 초록이어서 R, G, B 값의 차이가 매우 큽니다.
 # 반면 바닥의 그림자는 회색(무채색)이어서 R=G=B로 값의 차이가 거의 없습니다.
 b, g, r = cv2.split(img)
