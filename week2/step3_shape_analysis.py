@@ -3,7 +3,7 @@ import numpy as np
 import math
 
 # step1 작업 결과 이어받기 가정
-image_path = 'C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2/apple_side_A.png'
+image_path = 'C:/Users/PC1/OneDrive/바탕 화면/biomaterial-handling/week2/apple_side_A.png'
 img_array = np.fromfile(image_path, np.uint8)
 img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
 original_display = img.copy()

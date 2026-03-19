@@ -46,7 +46,7 @@ def process_image(img_path, prefix):
     print(f"[{prefix}] L:{L:.1f}, W:{W:.1f}")
 
 if __name__ == "__main__":
-    base_dir = "C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2"
+    base_dir = "C:/Users/PC1/OneDrive/바탕 화면/biomaterial-handling/week2"
     os.chdir(base_dir)
     
     print("정상 사과 측면 처리중 (A군)...")

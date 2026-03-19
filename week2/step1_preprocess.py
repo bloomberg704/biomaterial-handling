@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 if __name__ == "__main__":
-    base_dir = "C:/Users/dkswo/OneDrive/바탕 화면/biomaterial/week2"
+    base_dir = "C:/Users/PC1/OneDrive/바탕 화면/biomaterial-handling/week2"
     os.chdir(base_dir)
 
 # 1. 영상 로드 (한글 경로 지원을 위해 imdecode 사용 권장)

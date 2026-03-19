@@ -10,6 +10,9 @@ import cv2
 import numpy as np
 import os
 
+if __name__ == "__main__":
+    base_dir = "C:/Users/PC1/OneDrive/바탕 화면/biomaterial-handling/week3"
+    os.chdir(base_dir)
 
 # 교재 예제 3-3 기준 아보카도 전체 길이 [cm]
 AVOCADO_LENGTH_CM = 10.85
@@ -146,7 +149,7 @@ def _process_image(image, n_dense):
     # 8) 스플라인 보간용 포인트: 균등 간격 + 양 끝 보강
     #    6개만 사용하면 간격이 넓어 스플라인 오버슈트 발생하므로
     #    충분한 포인트를 제공합니다.
-    n_spline = 200
+    n_spline = 15
     spline_x = np.linspace(0, x_cm[-1], n_spline)
     # 양 끝 근처에 추가 포인트 삽입 (테이퍼링 보강)
     extra_near_start = np.array([x_cm[-1] * 0.02, x_cm[-1] * 0.05])
