@@ -13,7 +13,12 @@ from scipy.integrate import simpson
 import matplotlib.pyplot as plt
 import matplotlib
 import cv2
+import os
 from mpl_toolkits.mplot3d import Axes3D
+
+if __name__ == "__main__":
+    base_dir = "C:/Users/PC1/OneDrive/바탕 화면/biomaterial-handling/week3"
+    os.chdir(base_dir)
 
 # --- 한글 폰트 설정 (Windows: Malgun Gothic) ---
 matplotlib.rcParams['font.family'] = 'Malgun Gothic'

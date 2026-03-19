@@ -12,6 +12,11 @@ from scipy.interpolate import CubicSpline
 import matplotlib.pyplot as plt
 import matplotlib
 import cv2
+import os
+
+if __name__ == "__main__":
+    base_dir = "C:/Users/PC1/OneDrive/바탕 화면/biomaterial-handling/week3"
+    os.chdir(base_dir)
 
 # --- 한글 폰트 설정 (Windows: Malgun Gothic) ---
 matplotlib.rcParams['font.family'] = 'Malgun Gothic'
@@ -92,7 +97,7 @@ if data['from_image'] and data['image'] is not None:
     plt.suptitle('Step 1: 아보카도 이미지 → 프로파일 추출 → 스플라인 보간',
                  fontsize=14, fontweight='bold')
     plt.tight_layout()
-    plt.savefig('C:\Users\PC1\OneDrive\바탕 화면\biomaterial-handling\week3\step1_result.png', dpi=300)
+    plt.savefig('step1_result.png', dpi=300)
     plt.show()
 
 else:
