@@ -1,4 +1,4 @@
-# 🌾 생물자원가공공학 및 실습 (Biomaterial Handling & Processing) 202118381 안재형
+# 🌾 생물자원가공공학 및 실습 (Biomaterial Handling & Processing)
 
 본 저장소(Repository)는 **생물자원가공공학 및 실습** 교과의 주차별 프로그래밍 과제 및 데이터 분석 실습 코드를 통합 관리하기 위한 공식 포트폴리오(또는 제공용) 최상위 루트 공간입니다.
 
